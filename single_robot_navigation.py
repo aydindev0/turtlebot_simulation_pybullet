@@ -2,7 +2,7 @@ import pybullet as p
 import time
 import pybullet_data
 import yaml
-from cbs import cbs
+from a_star import a_star
 import math
 import threading
 
@@ -348,10 +348,10 @@ env_loaded = False
 agents, goals, env_loaded = read_input("scene/room_scene_2/room_scene_2_env.yaml", env_loaded)
 
 # time.sleep(1000)
-cbs.main("scene/room_scene_2/room_scene_2.yaml", "output.yaml")
-schedule = read_output("output.yaml")
+a_star.main("scene/room_scene_2/room_scene_2.yaml", "output1.yaml")
+schedule = read_output("output1.yaml")
 _,goals2,env_loaded = read_input("scene/room_scene_2/room_scene_2_stage_2.yaml", env_loaded)
-cbs.main("scene/room_scene_2/room_scene_2_stage_2.yaml", "output.yaml")
-schedule2 = read_output("output.yaml")
+a_star.main("scene/room_scene_2/room_scene_2_stage_2.yaml", "output2.yaml")
+schedule2 = read_output("output2.yaml")
 run(agents, goals, schedule, goals2, schedule2)
 time.sleep(2)

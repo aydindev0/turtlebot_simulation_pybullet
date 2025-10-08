@@ -6,42 +6,7 @@ agents:
   start:
   - 0
   - 5
-- goal:
-  - 0
-  - 1
-  name: 2
-  start:
-  - 4
-  - 5
-- goal:
-  - 3
-  - 0
-  name: 3
-  start:
-  - 7
-  - 4
-- goal:
-  - 0
-  - 2
-  name: 4
-  start:
-  - 9
-  - 0
-- goal:
-  - 3
-  - 2
-  name: 5
-  start:
-  - 13
-  - 0
-- goal:
-  - 3
-  - 1
 
-  name: 6
-  start:
-  - 15
-  - 4
 
 map:
   dimensions:
